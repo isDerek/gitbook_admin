@@ -1,0 +1,888 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>6.3.2.数据库模型 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../beFucBuild.html" />
+    
+    
+    <link rel="prev" href="TP5Route.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../abstract.html">
+            
+                <a href="../../abstract.html">
+            
+                    
+                    Abstract
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../FeLanguage/feLanguage.html">
+            
+                <a href="../../FeLanguage/feLanguage.html">
+            
+                    
+                    1.前端编程语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../FeEnvBuild/feEnvBuild.html">
+            
+                <a href="../../FeEnvBuild/feEnvBuild.html">
+            
+                    
+                    2.前端开发环境搭建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../FeEnvBuild/nodeEnvBuild.html">
+            
+                <a href="../../FeEnvBuild/nodeEnvBuild.html">
+            
+                    
+                    2.1.Node 环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../FeEnvBuild/vueEnvBuild.html">
+            
+                <a href="../../FeEnvBuild/vueEnvBuild.html">
+            
+                    
+                    2.2.Vue 环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../FeEnvBuild/vueFamily/vueFamily.html">
+            
+                <a href="../../FeEnvBuild/vueFamily/vueFamily.html">
+            
+                    
+                    3.Vue 全家桶
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../FeEnvBuild/vueFamily/vue-route.html">
+            
+                <a href="../../FeEnvBuild/vueFamily/vue-route.html">
+            
+                    
+                    3.1.Vue-Route
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../FeEnvBuild/vueFamily/Vuex.html">
+            
+                <a href="../../FeEnvBuild/vueFamily/Vuex.html">
+            
+                    
+                    3.2.Vuex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../FeEnvBuild/vueFamily/axios.html">
+            
+                <a href="../../FeEnvBuild/vueFamily/axios.html">
+            
+                    
+                    3.3.Axios
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../FeGUIBuild/feGUIBuild.html">
+            
+                <a href="../../FeGUIBuild/feGUIBuild.html">
+            
+                    
+                    4.前端界面功能模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../FeGUIBuild/loginPage/loginPage.html">
+            
+                <a href="../../FeGUIBuild/loginPage/loginPage.html">
+            
+                    
+                    4.1.登陆页面
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="../../FeGUIBuild/loginPage/userRegister.html">
+            
+                <a href="../../FeGUIBuild/loginPage/userRegister.html">
+            
+                    
+                    4.1.1.用户注册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="../../FeGUIBuild/loginPage/userLogin.html">
+            
+                <a href="../../FeGUIBuild/loginPage/userLogin.html">
+            
+                    
+                    4.1.2.用户登陆
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../FeGUIBuild/homePage/homePage.html">
+            
+                <a href="../../FeGUIBuild/homePage/homePage.html">
+            
+                    
+                    4.2.管控系统首页
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" data-path="../../FeGUIBuild/manufacturerModel/manufacturerModel.html">
+            
+                <a href="../../FeGUIBuild/manufacturerModel/manufacturerModel.html">
+            
+                    
+                    4.2.1.厂商模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" data-path="../../FeGUIBuild/deviceModel/deviceModel.html">
+            
+                <a href="../../FeGUIBuild/deviceModel/deviceModel.html">
+            
+                    
+                    4.2.2.设备模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../BeLanguage/beLanguage.html">
+            
+                <a href="../../BeLanguage/beLanguage.html">
+            
+                    
+                    5.后端编程语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../BeEnvBuild/beEnvBuild.html">
+            
+                <a href="../../BeEnvBuild/beEnvBuild.html">
+            
+                    
+                    6.后端开发环境搭建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../BeEnvBuild/MySQLEnvBuild.html">
+            
+                <a href="../../BeEnvBuild/MySQLEnvBuild.html">
+            
+                    
+                    6.1.MySQL 环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../BeEnvBuild/PHPEnvBuild.html">
+            
+                <a href="../../BeEnvBuild/PHPEnvBuild.html">
+            
+                    
+                    6.2.PHP 环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../../BeEnvBuild/TP5EnvBuild.html">
+            
+                <a href="../../BeEnvBuild/TP5EnvBuild.html">
+            
+                    
+                    6.3.TP5 环境搭建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.3.1" data-path="TP5Route.html">
+            
+                <a href="TP5Route.html">
+            
+                    
+                    6.3.1.路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8.3.2" data-path="TP5MySqlORM.html">
+            
+                <a href="TP5MySqlORM.html">
+            
+                    
+                    6.3.2.数据库模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../beFucBuild.html">
+            
+                <a href="../beFucBuild.html">
+            
+                    
+                    7.后端服务器功能模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../mySql.html">
+            
+                <a href="../mySql.html">
+            
+                    
+                    7.1.数据库设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../AOP/AOP.html">
+            
+                <a href="../AOP/AOP.html">
+            
+                    
+                    7.2.AOP 切面编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.2.1" data-path="../AOP/validate.html">
+            
+                <a href="../AOP/validate.html">
+            
+                    
+                    7.2.1.校验层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.2" data-path="../AOP/exception.html">
+            
+                <a href="../AOP/exception.html">
+            
+                    
+                    7.2.2.异常处理层
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../Model/model.html">
+            
+                <a href="../Model/model.html">
+            
+                    
+                    7.3.模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.3.1" data-path="../Model/userModel.html">
+            
+                <a href="../Model/userModel.html">
+            
+                    
+                    7.3.1.用户模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.2" data-path="../Model/manufacturerModel.html">
+            
+                <a href="../Model/manufacturerModel.html">
+            
+                    
+                    7.3.2.厂商模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.3" data-path="../Model/deviceModel.html">
+            
+                <a href="../Model/deviceModel.html">
+            
+                    
+                    7.3.3.设备模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../Deployment/deployment.html">
+            
+                <a href="../../Deployment/deployment.html">
+            
+                    
+                    8.阿里云部署
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../Deployment/ECSServer/ECSServer.html">
+            
+                <a href="../../Deployment/ECSServer/ECSServer.html">
+            
+                    
+                    8.1.ECS 服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../../Deployment/ECSServer/envBuild.html">
+            
+                <a href="../../Deployment/ECSServer/envBuild.html">
+            
+                    
+                    8.2.CentOS7.6 64Bit 环境搭建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.2.1" data-path="../../Deployment/Centos7.6/nginxEnvBuild.html">
+            
+                <a href="../../Deployment/Centos7.6/nginxEnvBuild.html">
+            
+                    
+                    8.2.1.Nginx 环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2.2" data-path="../../Deployment/Centos7.6/mySqlEnvBuild.html">
+            
+                <a href="../../Deployment/Centos7.6/mySqlEnvBuild.html">
+            
+                    
+                    8.2.2.MySql 环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2.3" data-path="../../Deployment/Centos7.6/phpEnvBuild.html">
+            
+                <a href="../../Deployment/Centos7.6/phpEnvBuild.html">
+            
+                    
+                    8.2.3.PHP 环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2.4" data-path="../../Deployment/Centos7.6/nodeEnvBuild.html">
+            
+                <a href="../../Deployment/Centos7.6/nodeEnvBuild.html">
+            
+                    
+                    8.2.4.Node 环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2.5" data-path="../../Deployment/Centos7.6/zshEnvBuild.html">
+            
+                <a href="../../Deployment/Centos7.6/zshEnvBuild.html">
+            
+                    
+                    8.2.5.zsh 环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2.6" data-path="../../Deployment/Centos7.6/iptablesEnvBuild.html">
+            
+                <a href="../../Deployment/Centos7.6/iptablesEnvBuild.html">
+            
+                    
+                    8.2.6.iptables 防火墙
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../../Deployment/Centos7ProRelease.html">
+            
+                <a href="../../Deployment/Centos7ProRelease.html">
+            
+                    
+                    8.3.阿里云项目部署
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.3.1" data-path="../../Deployment/ProRelease/nginxTp5.html">
+            
+                <a href="../../Deployment/ProRelease/nginxTp5.html">
+            
+                    
+                    8.3.1.前后端环境部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >6.3.2.数据库模型</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="632&#x6570;&#x636E;&#x5E93;&#x6A21;&#x578B;">6.3.2.&#x6570;&#x636E;&#x5E93;&#x6A21;&#x578B;</h1>
+<hr>
+<p>TP5 &#x64CD;&#x4F5C;&#x6570;&#x636E;&#x5E93;&#x6709; DB &#x8BBF;&#x95EE;&#x4EE5;&#x53CA; ORM &#x6A21;&#x578B;&#x64CD;&#x4F5C;&#x4E24;&#x79CD;&#x5F62;&#x5F0F;&#x3002;DB &#x662F;&#x4EE5;&#x539F;&#x58F0; MySql &#x8BED;&#x53E5;&#x8FDB;&#x884C;&#x8BBF;&#x95EE;&#xFF0C;&#x800C; ORM &#x662F;&#x5C01;&#x88C5;&#x8D77;&#x6765;&#x7684; MySql &#x8BF7;&#x6C42;&#xFF0C;&#x672C;&#x8D28;&#x90FD;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;&#x901A;&#x8FC7; ORM &#x53BB;&#x64CD;&#x4F5C;&#x6570;&#x636E;&#x5E93;&#x66F4;&#x663E;&#x4FBF;&#x6377;&#x3002;TP5 &#x6846;&#x67B6;&#x8FDE;&#x63A5;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x5728; config/database &#x6587;&#x4EF6;&#xFF0C;&#x5199;&#x5165;&#x5BF9;&#x5E94;&#x7684;&#x6570;&#x636E;&#x5E93;&#x53C2;&#x6570;&#x5373;&#x53EF;&#x3002;&#x5728;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;&#x7684;&#x662F; MySql &#x6570;&#x636E;&#x5E93;&#x3002;</p>
+<pre><code>    // &#x6570;&#x636E;&#x5E93;&#x7C7B;&#x578B;
+    &apos;type&apos;            =&gt; &apos;mysql&apos;,
+    // &#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;
+    &apos;hostname&apos;        =&gt; &apos;xxxxxx&apos;,
+    // &#x6570;&#x636E;&#x5E93;&#x540D;
+    &apos;database&apos;        =&gt; &apos;xxxx&apos;,
+    // &#x7528;&#x6237;&#x540D;
+    &apos;username&apos;        =&gt; &apos;xxxx&apos;,
+    // &#x5BC6;&#x7801;
+    &apos;password&apos;        =&gt; &apos;xxxx&apos;,
+    // &#x7AEF;&#x53E3;
+    &apos;hostport&apos;        =&gt; &apos;xxxxx&apos;,
+</code></pre><p>&#x5728;&#x4F7F;&#x7528; ORAM &#x6A21;&#x578B;&#x64CD;&#x4F5C;&#x6570;&#x636E;&#x5E93;&#x65F6;&#xFF0C;&#x7C7B;&#x540D;&#x8981;&#x4E3A;&#x6570;&#x636E;&#x5E93;&#x8868;&#x540D;&#xFF0C;&#x4E14;&#x7EE7;&#x627F; TP5 &#x7684; Model &#x7C7B;&#x5373;&#x53EF;</p>
+<pre><code>use think\Model;
+// &#x6570;&#x636E;&#x5E93;&#x8868;&#x660E;&#x4E3A; DeviceInfo
+class DeviceInfo extends Model
+{
+
+}
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="TP5Route.html" class="navigation navigation-prev " aria-label="Previous page: 6.3.1.路由">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../beFucBuild.html" class="navigation navigation-next " aria-label="Next page: 7.后端服务器功能模块">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"6.3.2.数据库模型","level":"1.8.3.2","depth":3,"next":{"title":"7.后端服务器功能模块","level":"1.9","depth":1,"path":"BeFucBuild/beFucBuild.md","ref":"BeFucBuild/beFucBuild.md","articles":[{"title":"7.1.数据库设计","level":"1.9.1","depth":2,"path":"BeFucBuild/mySql.md","ref":"BeFucBuild/mySql.md","articles":[]},{"title":"7.2.AOP 切面编程","level":"1.9.2","depth":2,"path":"BeFucBuild/AOP/AOP.md","ref":"BeFucBuild/AOP/AOP.md","articles":[{"title":"7.2.1.校验层","level":"1.9.2.1","depth":3,"path":"BeFucBuild/AOP/validate.md","ref":"BeFucBuild/AOP/validate.md","articles":[]},{"title":"7.2.2.异常处理层","level":"1.9.2.2","depth":3,"path":"BeFucBuild/AOP/exception.md","ref":"BeFucBuild/AOP/exception.md","articles":[]}]},{"title":"7.3.模型","level":"1.9.3","depth":2,"path":"BeFucBuild/Model/model.md","ref":"BeFucBuild/Model/model.md","articles":[{"title":"7.3.1.用户模型","level":"1.9.3.1","depth":3,"path":"BeFucBuild/Model/userModel.md","ref":"BeFucBuild/Model/userModel.md","articles":[]},{"title":"7.3.2.厂商模型","level":"1.9.3.2","depth":3,"path":"BeFucBuild/Model/manufacturerModel.md","ref":"BeFucBuild/Model/manufacturerModel.md","articles":[]},{"title":"7.3.3.设备模型","level":"1.9.3.3","depth":3,"path":"BeFucBuild/Model/deviceModel.md","ref":"BeFucBuild/Model/deviceModel.md","articles":[]}]}]},"previous":{"title":"6.3.1.路由","level":"1.8.3.1","depth":3,"path":"BeFucBuild/TP5Usermanual/TP5Route.md","ref":"BeFucBuild/TP5Usermanual/TP5Route.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"BeFucBuild/TP5Usermanual/TP5MySqlORM.md","mtime":"2019-03-22T09:26:44.406Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-25T02:01:25.708Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
